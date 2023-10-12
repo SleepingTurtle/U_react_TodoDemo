@@ -54,7 +54,7 @@ function App() {
               {showAddTodoForm ? 'Close New Todo' : 'New Todo'}
             </button>
             {showAddTodoForm && 
-            <NewToDoForm addTodo={addTodo}/>
+              <NewToDoForm addTodo={addTodo}/>
             }
           </table>
         </div>
