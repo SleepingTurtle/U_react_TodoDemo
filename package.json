@@ -39,5 +39,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
-  }
+  },
+  "homepage": "https://sleepingturtle.github.io/U_react_TodoDemo/"
 }
