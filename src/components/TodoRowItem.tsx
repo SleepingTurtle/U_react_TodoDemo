@@ -1,4 +1,10 @@
-function TodoRowItem(props) {
+import React from "react"
+function TodoRowItem(props: {
+    rowNumber: number, 
+    rowDescription: string, 
+    rowAssigned: string, 
+    deleteTodo: Function
+}) {
 
     return (
         <tr onClick={() => props.deleteTodo(props.rowNumber)}>

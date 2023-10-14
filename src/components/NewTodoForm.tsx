@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 
-function NewToDoForm(props) {
+function NewToDoForm(props: {addTodo: Function}) {
 
     const [description, setDescription] = useState('');
     const [assigned, setAssigned] = useState('');
@@ -29,7 +29,7 @@ function NewToDoForm(props) {
                     <label className="form-control">Description</label>
                     <textarea 
                         className="form-control" 
-                        row={3} 
+                        rows={3} 
                         required
                         onChange={e => setDescription(e.target.value)}
                         value={description}
